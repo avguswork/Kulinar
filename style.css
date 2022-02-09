@@ -1,0 +1,366 @@
+@font-face {
+    font-family: Preciosa;
+    src: url(font/Preciosa.ttf);
+}
+
+@font-face {
+    font-family: BravoRGRegular;
+    src: url(font/BravoRGRegular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: CrimsonText-Roman;
+    src: url(font/CrimsonText-Roman.ttf);
+}
+
+@font-face {
+    font-family: Amsdam-Regular-Mac;
+    src: url(font/Amsdam-Regular-Mac.ttf);
+}
+
+@font-face {
+    font-family: Amsdam-Regular;
+    src: url(font/Amsdam-Regular.ttf);
+}
+
+
+    
+
+
+
+body{
+
+    overflow-x: hidden ;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/fone.jpg);
+    background-size: 100%;
+    width: 100%;
+    margin: 0%;
+    height: 100vh;
+}
+
+
+
+ 
+
+.navy_block{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+    width: 100%;
+}
+
+.navy_logo{
+    width: 50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100px;
+    
+}
+
+
+.h{
+    position: absolute;
+    font-family: BravoRGRegular;
+    font-size: 400%;
+    padding-left: 1%;
+    color:rgb(255, 81, 0);
+    text-shadow: 1px 5px 5px rgb(0, 0, 0);
+    
+}
+
+.navy_button_block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.705);
+    justify-content: space-around;
+    border-radius: 25px;
+}
+
+.navy_button{
+    font-size: 200%;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: unset;
+    
+}
+
+.navy_button:hover{
+    color: rgb(255, 81, 0);
+}
+
+.navy_button:active{
+    text-shadow: 1px 1px 3px black;
+}
+
+
+.coock_block{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.coocking_button{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.507);
+    font-size: 500%;
+    font-family: Preciosa;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.coocking_button:hover{
+    color: rgb(255, 81, 0)
+}
+
+.coocking_button:active{
+    text-shadow: 1px 1px 3px white;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.mainH{
+    font-size: 300%;
+}
+
+.katalogBlock{
+
+    margin-bottom: 5%;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgb(255, 255, 255);
+    
+}
+
+.recept{
+    margin: 3%;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    background-color:rgb(255, 136, 70);
+    border-radius: 10px;
+    padding: 1%;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.receptImg{
+    width: 20%;
+}
+
+.receptText{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+
+footer{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    color: white;
+    background-color:black;
+    text-align: center;
+    justify-content: center;
+    bottom: 0%;
+    
+}
+
+
+@media (orientation: portrait) {
+    header {
+      background-size: auto;
+      background-position: center;
+    }
+
+    .navy_block{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navy_logo{
+        margin-top: 10%;
+        font-size: 200%;
+    }
+    
+    .navy_button_block{
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0);
+        margin-top: 10%;
+        flex-direction: column;
+        height: 100%;
+        padding-top: 2%;
+        padding-bottom: 4%;
+    }
+
+    .navy_button{
+        width: 50%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.712);
+        font-size: 400%;
+        margin: 2%;
+        border-radius: 25px;
+    }
+
+    .coocking_button{
+        margin-top: 20%;
+        font-size: 700%;
+    }
+
+    .recept{
+        flex-direction: column;
+    }
+
+    .receptImg{
+        width: max-content;
+        height: 100%;
+    }
+    
+  }
+
+
+  .button2{
+    width: 135px;
+    height: 40px;
+    text-align: center;
+    background-color: #3e3d3d;
+    border: 2px #3e3d3d solid;
+    color: white;
+    cursor: pointer;
+}
+
+.button2:active{
+    border: 2px #b8b6b6 solid;
+ 
+}
+
+#sign_up_background{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.705);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#sign_up_background:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign_up_windows{
+    background-color:rgb(228, 222, 222);
+    width: 50%;
+    min-width: 500px;
+    height: 500px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: #a3a0a0 4px solid;
+    border-radius:25px;
+}
+
+
+.sign_up_h_block{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height: 100px;
+    margin: 0;
+    background-color:#464646;;
+    
+    
+}
+
+.sign_up_h_ittem{
+    width: 57%;
+    min-width: 56%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: Amsdam-Regular-Mac;
+    font-size: 15px bold;
+    color: white;
+}
+
+.sign_up_x_ittem{
+    width: 43%;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    padding-top: 10px;
+    color: white;
+}
+
+
+
+
+.sign_up_form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.sign_up_form_input{
+    width: 400px;
+    height: 50px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+
+.white{
+    color: white;
+}
+
+
+
+
+
+
+

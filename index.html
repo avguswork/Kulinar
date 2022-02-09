@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Kulinar</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+
+        <header>
+            <div class="navy_block">
+                <div class="navy_logo">
+                    <h1 class="h">Kulinar</h1>
+                </div>
+                <div class="navy_button_block">
+                    <button class="navy_button">Головна</button>
+                    <button class="navy_button">Каталог</button>
+                    <button class="navy_button">Новини</button>
+                    <a href="#sign_up_background"><button class="navy_button">Добавити рецепти</button></a>
+                </div>
+            </div>
+            <div class="coock_block">
+                <button class="coocking_button"  id="btn">Підібрати рецепт</button>
+            </div>
+        </header>
+
+        <main>
+        <div class="main">
+            <h2 class="mainH">Австралійська кухня</h2>
+            <div class="katalogBlock">
+               <!-- <div class="recept">
+                    <div class="receptImg">
+                        <img src="images/img1.jpg">
+                    </div>
+                    <div class="receptText">
+                        <h3>Австралийский летний салат</h3>
+                        <p style="color: white;">8 тонких ломтиков ветчины, 4 помидора, 
+                            по одному стакану нарубленных кубиками огурцов, 
+                            яблок и сельдерея, 2 столовые ложки сока апельсина, 
+                            2-3 листа салата, майонез.</p>
+                        <p>Каждый ломтик ветчины скатать в небольшой рулет. 
+                            Огурцы, яблоки и сельдерей перемешать с соком апельсина, выложить на 
+                            плоскую тарелку, обложить кругом маринованными салатными 
+                            листьями, четвертушками помидоров и рулетами из ломтиков 
+                            ветчины Обильно полить майонезом.</p>
+                    </div>
+                </div> -->
+               <!-- <div class="recept">
+                    <div class="receptImg">
+                        <img src="images/img2.jpg">
+                    </div>
+                    <div class="receptText">
+                        <h3>Австралийский цыпленок</h3>
+                        <p style="color: white;">1 курица, пиво (Лучше всего "Невское") 1 банка, 
+                            грибы свежие (замороженные) 300 г., замороженный зеленый горошек 1 пакет, 
+                            морковь 300 г., лук 2 шт., зелень: петрушка, сельдерей, базилик по 1 пучку, 
+                            чеснок 1-2 зубчика соль, черный перец, 1 стакан смета- ны, немного растительного масла.</p>
+                        <p>Нагреть большую латку, затем нагреть в ней раст. масло и слегка обжарить морковь, лук и грибы, нарезанные кубиками, добавить 
+                            зеленый горошек, подготовленную курицу (Можно целиком, можно 
+                            порезать), слегка посолить и поперчить, положить в латку на 
+                            овощную (Подушку), вылить банку пива и поставить в духовку 
+                            примерно минут на 40-50 (Первые 15 минут на сильном огне без 
+                            крышки, затем огонь уменьшить и накрыть крышкой), затем 
+                            добавить сметану, порубленную зелень, мелко порезанный чеснок, 
+                            при необходимости досолить и доперчить, томить в духовке еще 
+                            минут 15 до готовности курицы. 
+                            
+                            На сколько порций: 5. Время приготовления 65 мин.</p>
+                    </div>
+                </div>-->
+
+                <div class="recept">
+                   <!-- <div class="receptImg">
+                        <img src="">
+                    </div>-->
+                    <div class="receptText">
+                        
+                            <div id="list"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div>KULINAR</div>
+        </footer>
+
+        <div id="sign_up_background">
+            <div class="sign_up_windows">
+                <div class="sign_up_h_block">
+                    <div class="sign_up_h_ittem"><h1>Добавити рецепт</h1></div>
+                    <div class="sign_up_x_ittem"><a href="#sign_up_background:target"><h3>X</h3></a></div>
+                </div>
+                
+                <form class="sign_up_form" id="form">
+                    <label for="recipeName">Назва страви:</label>
+                    <input name="recipeName" id="recipeName" placeholder="Назва рецепта" class="sign_up_form_input">
+                    <label for="ingredients">Інгридієнти:</label>
+                    <input name="ingredients" id="ingredients" placeholder="Інгридієнти"class="sign_up_form_input">
+                    <label for="recipe">Рецепт:</label>
+                    <input name="recipe" id="recipe" placeholder="Рецепт" class="sign_up_form_input">
+                    <button id="submit" type="submit" class="button2">Додати рецепт</button>
+                </form>
+                
+            </div>
+        </div>
+
+         
+       <script src="app.js"></script>
+        
+    </body>
+</html>
