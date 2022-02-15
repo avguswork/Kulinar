@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Kulinar</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+
+        <header>
+            <div class="navy_block">
+                <div class="navy_logo">
+                    <h1 class="h">Kulinar</h1>
+                </div>
+                <div class="navy_button_block">
+                    <button class="navy_button">Головна</button>
+                    <button class="navy_button" id="buttonCatalog">Каталог</button>
+                    <button class="navy_button">Увійти</button>
+                    <a href="#sign_up_background"><button class="navy_button">Додати</button></a>
+                </div>
+            </div>
+            <div class="coock_block">
+                <a href="#modal_background"><button class="coocking_button" id="getServerRecipeName">Підібрати рецепт</button></a>
+            </div>
+
+            
+            </div>
+
+        </header>
+
+        <main>
+        <div class="main">
+
+            
+
+            <h2 class="mainH">Рецепти</h2>
+            <div class="catalogBlock" id="catalogBlock">
+
+                
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div>KULINAR</div>
+        </footer>
+
+        <div id="modal_background">
+            <div class="modal_windows">
+                <div class="modal_h_block">
+                    <div class="modal_h_ittem">Вибрати рецепт</div>
+                    <button class="modal_x_ittem"><a href="#modal_background:target" class="white">X</a></button>
+                </div>
+
+                    <div class="select_block_output">
+                        <div class="search_block">
+                        <h4>Пошук по параметрам</h4>
+                        <label for="selectCountry">Країна походження</label>
+                        <select name="selectCountry" id="getSelectCountry" class="select">
+                            <option></option>
+                            <option>Австраліська кухня</option>
+                            <option>Австрійська кухня</option>
+                            <option>Азербайджанська кухня</option>
+                            <option>Алжирська кухня</option>
+                            <option>Американська кухня</option>
+                            <option>Англійська кухня</option>
+                            <option>Аргентинська кухня</option>
+                            <option>Армянська кухня</option>
+                            <option>Африканська кухня</option>
+                            <option>Білоруська кухня</option>
+                            <option>Бельгійская кухня</option>
+                            <option>Болгарська кухня</option>
+                            <option>Бразильська кухня</option>
+                            <option>Венгерська кухня</option>
+                            <option>Венесуельська кухня</option>
+                            <option>Голландська кухня</option>
+                            <option>Грузинська кухня</option>
+                            <option>Датська кухня</option>
+                            <option>Дитяча кухня</option>
+                            <option>Египетська кухня</option>
+                            <option>Индійська кухня</option>
+                            <option>Йорданська кухня</option>
+                            <option>Іракська кухня</option>
+                            <option>Ірландська кухня</option>
+                            <option>Італійська кухня</option>
+                            <option>Казахська кухня</option>
+                            <option>Канадська кухня</option>
+                            <option>Киргизська кухня</option>
+                            <option>Китайська кухня</option>
+                            <option>Кубинська кухня</option>
+                            <option>Латвійська кухня</option>
+                            <option>Литовська кухня</option>
+                            <option>Молдовська кухня</option>
+                            <option>Німецька кухня</option>
+                            <option>Норвежька кухня</option>
+                            <option>Польська кухня</option>
+                            <option>Руминська кухня</option>
+                            <option>Русська кухня</option>
+                            <option>Таджикська кухня</option>
+                            <option>Татарська кухня</option>
+                            <option>Турецька кухня</option>
+                            <option>Туркменська кухня</option>
+                            <option>Узбекська кухня</option>
+                            <option>Українська кухня</option>
+                            <option>Французька кухня</option>
+                            <option>Шведська кухня</option>
+                            <option>Швейцарська кухня</option>
+                            <option>Эстонська кухня</option>
+                            <option>Японська кухня</option>
+                            <option>Інше</option>
+                        </select>
+                        <label for="selectCoock">Вид страви</label>
+                        <select name="selectCoock" id="getSelectCoock" class="select">
+                            <option></option>
+                            <option>Перше</option>
+                            <option>Друге</option>
+                            <option>Салати</option>
+                            <option>Напої</option>
+                            <option>Десерти</option>
+                        </select>
+                        </div>
+                        <div class="search_block">
+                        <h4>Пошук по назві рецепта</h4>
+                        <label for="selectRecipeName">Назва страви</label>
+                        <select name="selectRecipeName"  id="getSelectRecipeName" class="select">
+                            <option id="child"></option> 
+                        
+                        </select>
+                        <button id="refresh">refresh</button>
+                    </div>
+                </div>
+                    <a href="#modal_background:target"><button  id="buttonSearch" class="button2" style="margin-bottom: 10px; border-radius: 25px;">Знайти рецепти</button></a>
+                </div>
+            </div>
+
+        <div id="sign_up_background">
+            <div class="sign_up_windows">
+                <div class="sign_up_h_block">
+                    <div class="sign_up_h_ittem"><h1>Добавити рецепт</h1></div>
+                    <button class="sign_up_x_ittem"><a href="#sign_up_background:target" class="white">X</a></button>
+                </div>
+                
+                <form class="sign_up_form" id="form">
+                    <div class="select_block">
+                        <select id="selectCountry" class="select">
+                            <option>Австраліська кухня</option>
+                            <option>Австрійська кухня</option>
+                            <option>Азербайджанська кухня</option>
+                            <option>Алжирська кухня</option>
+                            <option>Американська кухня</option>
+                            <option>Англійська кухня</option>
+                            <option>Аргентинська кухня</option>
+                            <option>Армянська кухня</option>
+                            <option>Африканська кухня</option>
+                            <option>Білоруська кухня</option>
+                            <option>Бельгійская кухня</option>
+                            <option>Болгарська кухня</option>
+                            <option>Бразильська кухня</option>
+                            <option>Венгерська кухня</option>
+                            <option>Венесуельська кухня</option>
+                            <option>Голландська кухня</option>
+                            <option>Грузинська кухня</option>
+                            <option>Датська кухня</option>
+                            <option>Дитяча кухня</option>
+                            <option>Египетська кухня</option>
+                            <option>Индійська кухня</option>
+                            <option>Йорданська кухня</option>
+                            <option>Іракська кухня</option>
+                            <option>Ірландська кухня</option>
+                            <option>Італійська кухня</option>
+                            <option>Казахська кухня</option>
+                            <option>Канадська кухня</option>
+                            <option>Киргизська кухня</option>
+                            <option>Китайська кухня</option>
+                            <option>Кубинська кухня</option>
+                            <option>Латвійська кухня</option>
+                            <option>Литовська кухня</option>
+                            <option>Молдовська кухня</option>
+                            <option>Німецька кухня</option>
+                            <option>Норвежька кухня</option>
+                            <option>Польська кухня</option>
+                            <option>Руминська кухня</option>
+                            <option>Русська кухня</option>
+                            <option>Таджикська кухня</option>
+                            <option>Татарська кухня</option>
+                            <option>Турецька кухня</option>
+                            <option>Туркменська кухня</option>
+                            <option>Узбекська кухня</option>
+                            <option>Українська кухня</option>
+                            <option>Французька кухня</option>
+                            <option>Шведська кухня</option>
+                            <option>Швейцарська кухня</option>
+                            <option>Эстонська кухня</option>
+                            <option>Японська кухня</option>
+                            <option>Інше</option>
+                        </select>
+                        <select id="selectCoock" class="select">
+                            <option>Перше</option>
+                            <option>Друге</option>
+                            <option>Салати</option>
+                            <option>Напої</option>
+                            <option>Десерти</option>
+                        </select>
+                    </div>
+                    <label for="recipeName">Назва страви:</label>
+                    <input name="recipeName" id="recipeName" placeholder="Назва рецепта" class="sign_up_form_input">
+                    <label for="ingredients">Інгридієнти:</label>
+                    <textarea name="ingredients" id="ingredients" placeholder="Інгридієнти"class="sign_up_form_input2"></textarea>
+                    <label for="recipe">Рецепт:</label>
+                    <textarea name="recipe" id="recipe" placeholder="Рецепт" class="sign_up_form_input3"></textarea>
+                    <button id="submit" type="submit" class="button2">Додати рецепт</button>
+                </form>
+                
+            </div>
+        </div>
+
+         
+       <script src="app.js"></script>
+        
+    </body>
+</html>
